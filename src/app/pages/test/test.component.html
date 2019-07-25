@@ -1,0 +1,35 @@
+<h2>ngFor</h2>
+
+<div class="box" *ngFor="let item of ngForList">
+  <div>{{ item.name }}</div>
+
+  <h3>ngIf:
+    <ng-container *ngIf="item.checked; else elseTemplate">
+      选中
+    </ng-container>
+    <ng-template #elseTemplate>
+      未选中
+    </ng-template>
+  </h3>
+
+  <div>
+    {{item.n1 + item.n2}}
+    {{"item.n1 + item.n2"}}
+  </div>
+  <a [title]="item.name + ' details'">
+    {{ item.name }}
+  </a>
+
+  <div>
+    {{
+    *ngFor
+    <br />
+    *ngIf
+    Interpolation \{\{ \}\}
+    Property binding [ ]
+    Event binding ( )
+    
+    }}
+
+  </div>
+</div>
