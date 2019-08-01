@@ -6,7 +6,7 @@ import { CenterPageComponent } from './pages/center-page/center-page.component';
 import { TestPageComponent } from './pages/test-page/test-page.component';
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent },
+  { path: 'home', component: HomePageComponent },
   { path: 'center', component: CenterPageComponent },
   { path: 'test', component: TestPageComponent },
 ];

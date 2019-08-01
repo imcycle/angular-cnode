@@ -1,3 +1,6 @@
-<div>
-  tabbar component
+<div class="box">
+  <div class="item" *ngFor="let item of TabbarList" (click)="gogogo(item)">
+    <img src="{{item.icon}}" />
+    <span class="{{item.checked?'blue': ''}}">{{item.name}}</span>
+  </div>
 </div>
