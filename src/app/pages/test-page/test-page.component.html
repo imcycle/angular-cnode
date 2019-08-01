@@ -1,5 +1,17 @@
-<h2>ngFor</h2>
+<h2>父子组件</h2>
+<test-component #chlid [fatherNum]="fatherNum" (fatherClick)="onFatherClick($event)">
+</test-component>
+<div style="padding: 20px; margin: 20px; border: 1px solid #000;">
+  <h3>父组件</h3>
+  <h4>父组件调用子组件方法 @ViewChild</h4>
+  <button (click)="chlid.sonValueChange(1)">ViewChild +</button>
+  <button (click)="chlid.sonValueChange(2)">ViewChild -</button>
+</div>
 
+
+
+
+<h2>ngFor</h2>
 <div class="box" *ngFor="let item of ngForList">
   <div>{{ item.name }}</div>
 

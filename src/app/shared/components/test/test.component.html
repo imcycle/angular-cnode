@@ -1,0 +1,26 @@
+<div class="box">
+  <h3>子组件</h3>
+
+  <hr />
+
+  <h4>子组件事件</h4>
+  <div>my value: {{clickNum}}</div>
+  <button (click)="myClick(1)">click +</button>
+  <button (click)="myClick(2)">click -</button>
+
+  <hr />
+
+  <h4>父组件传值给子组件 @Input</h4>
+  <div>props value: {{fatherNum}}</div>
+  <h4>子组件调用父组件方法 @Output</h4>
+  <button (click)="sonClick(1)">click father +</button>
+  <button (click)="sonClick(2)">click father -</button>
+
+  <hr />
+
+  <h4>父组件调用子组件方法 @ViewChild</h4>
+  <div>sonValue： {{sonValue}}</div>
+
+  <hr />
+
+</div>
