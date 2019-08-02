@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import {
   api_topic_collects,
@@ -12,7 +13,10 @@ import {
   styleUrls: ['./collect-page.component.less']
 })
 export class CollectPageComponent {
-  constructor(private http: HttpClient) { }
+  constructor(
+    private router: Router,
+    private http: HttpClient,
+  ) { }
   loginname: string = null;
   collectList: object[] = null;
 
@@ -56,6 +60,10 @@ export class CollectPageComponent {
     }, err => {
       alert(err.error.error_msg);
     })
+  }
+
+  onWrapClick = (id) => {
+    this.router.navigate([`/article/${id}`]);
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import {
   api_topics,
@@ -11,7 +12,10 @@ import {
   styleUrls: ['./home-page.component.less']
 })
 export class HomePageComponent {
-  constructor(private http: HttpClient) { }
+  constructor(
+    private router: Router,
+    private http: HttpClient,
+  ) { }
   tab: string = "all";
   page: number = 1;
   limit: number = 20;
@@ -33,7 +37,7 @@ export class HomePageComponent {
   }
 
   onWrapClick = function (id) {
-    console.log(id)
+    this.router.navigate([`/article/${id}`]);
   }
 
   handleCollectClick = function (id) {

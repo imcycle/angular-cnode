@@ -1,0 +1,14 @@
+<div class="p-20" *ngIf="article">
+  <h2>{{article.title}}</h2>
+  <div class="fs-12 mb-20">
+    <span>· 发布于{{article.create_at}}&nbsp;</span>
+    <span>· 作者{{article.author.loginname}}&nbsp;</span>
+    <span>· {{article.visit_count}}次浏览&nbsp;</span>
+    <span>· 来自{{article.tab}}&nbsp;</span>
+  </div>
+  <!-- <div class="content" v-html="article.content"></div> -->
+  <div>
+    <div>{{article.reply_count}}评论</div>
+    <!-- <CommentCard v-for="item in article.replies" :key="item.id" :myData="item" /> -->
+  </div>
+</div>
