@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {
   api_accesstoken,
-} from '../../shared/services/utils';
+} from '../../shared/services/urls';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
