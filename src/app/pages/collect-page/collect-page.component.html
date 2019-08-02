@@ -1,6 +1,6 @@
 <div class="box">
-  <articlecard-component *ngFor="let item of topicList" [myData]="item" (onWrapClick)="onWrapClick($event)">
-    <button (click)="handleCollectClick(item.id)">收藏</button>
+  <articlecard-component *ngFor="let item of collectList" [myData]="item" (onWrapClick)="onWrapClick($event)">
+    <button (click)="handleDeCollectClick(item.id)">取消收藏</button>
   </articlecard-component>
   <tabbar-component></tabbar-component>
 </div>

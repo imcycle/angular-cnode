@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {
-  api_topics,
-  api_topic_collect,
+  api_topic_collects,
+  api_topic_de_collect,
 } from '../../shared/services/urls';
 
 
@@ -16,32 +16,46 @@ export class CollectPageComponent {
   loginname: string = null;
   collectList: object[] = null;
 
-  fetchCollectList: async function() {
+  ngOnInit(): void {
+    this.loginname = localStorage.WM_loginname;
+    this.fetchCollectList();
+  }
+
+  fetchCollectList = async function () {
     if (!this.loginname) {
-      Toast.fail("请先登录");
+      alert('请先登录');
       return;
     }
-    let data = await fetch(`${api_topic_collects}/${this.loginname}`);
-    if (data) {
-      this.collectList = data;
-    }
-  },
+    this.http.get(`${api_topic_collects}/${this.loginname}`)
+      .subscribe(json => {
+        if (json.success) {
+          this.collectList = json.data;
+        }
+      }, err => {
+        alert(err.error.error_msg);
+      })
+  };
 
 
-  handleDeCollectClick: async function(id) {
+  handleDeCollectClick = async function (id) {
     let params = {
       accesstoken: localStorage.WM_token,
       topic_id: id
     };
-    let success = await fetch(api_topic_de_collect, {
-      method: "post",
-      body: JSON.stringify(params),
-      returnBoolean: true
-    });
-    if (success) {
-      Toast.success("取消收藏成功");
-    }
-    this.fetchCollectList();
+    this.http.post(api_topic_de_collect, params, {
+      headers: {
+        'content-type': 'application/json',
+      }
+    }).subscribe(json => {
+      if (json.success) {
+        alert('取消收藏成功');
+      } else {
+        alert('取消收藏失败');
+      }
+      this.fetchCollectList();
+    }, err => {
+      alert(err.error.error_msg);
+    })
   }
 
 }
