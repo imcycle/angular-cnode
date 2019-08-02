@@ -1,4 +1,21 @@
-<div>
-  center page
+<div class="center">
+  <ng-container *ngIf="loginname; else elseTemplate">
+    <div class="user-card">
+      <img width="100" height="100" [src]="avatar_url" alt="" />
+      <div>{{loginname}}</div>
+    </div>
+  </ng-container>
+  <ng-template #elseTemplate>
+    <div class="user-card">
+      <input class="user-input" [(ngModel)]="token" />
+      <button class="user-btn" (click)="handleLoginClick()">登录</button>
+    </div>
+  </ng-template>
+
+  <div class="cell">
+    <div>消息</div>
+    <div>></div>
+  </div>
+
   <tabbar-component></tabbar-component>
 </div>
