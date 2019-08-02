@@ -557,7 +557,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/whosmeya/Code/github/angular-cnode/src/styles.less */"./src/styles.less");
+module.exports = __webpack_require__(/*! E:\code_github\angular-cnode\src\styles.less */"./src/styles.less");
 
 
 /***/ })

@@ -119,7 +119,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /**
- * @license Angular v8.1.1
+ * @license Angular v8.1.2
  * (c) 2010-2019 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -6565,7 +6565,7 @@ function isPlatformWorkerUi(platformId) {
 /**
  * @publicApi
  */
-var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('8.1.1');
+var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('8.1.2');
 
 /**
  * @license
@@ -7056,7 +7056,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "R3BoundTarget", function() { return R3BoundTarget; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /**
- * @license Angular v8.1.1
+ * @license Angular v8.1.2
  * (c) 2010-2019 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -25442,7 +25442,7 @@ function publishFacade(global) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var VERSION$1 = new Version('8.1.1');
+var VERSION$1 = new Version('8.1.2');
 
 /**
  * @license
@@ -35674,7 +35674,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 /**
- * @license Angular v8.1.1
+ * @license Angular v8.1.2
  * (c) 2010-2019 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -54705,7 +54705,7 @@ var Version = /** @class */ (function () {
 /**
  * @publicApi
  */
-var VERSION = new Version('8.1.1');
+var VERSION = new Version('8.1.2');
 
 /**
  * @license
@@ -66814,7 +66814,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /**
- * @license Angular v8.1.1
+ * @license Angular v8.1.2
  * (c) 2010-2019 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -67254,7 +67254,7 @@ var CachedResourceLoader = /** @class */ (function (_super) {
 /**
  * @publicApi
  */
-var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('8.1.1');
+var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('8.1.2');
 
 /**
  * @license
@@ -67365,7 +67365,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /**
- * @license Angular v8.1.1
+ * @license Angular v8.1.2
  * (c) 2010-2019 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -69869,7 +69869,7 @@ var By = /** @class */ (function () {
 /**
  * @publicApi
  */
-var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["Version"]('8.1.1');
+var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["Version"]('8.1.2');
 
 /**
  * @license
@@ -69987,7 +69987,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /**
- * @license Angular v8.1.1
+ * @license Angular v8.1.2
  * (c) 2010-2019 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -75738,7 +75738,7 @@ function provideRouterInitializer() {
 /**
  * @publicApi
  */
-var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["Version"]('8.1.1');
+var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["Version"]('8.1.2');
 
 /**
  * @license
