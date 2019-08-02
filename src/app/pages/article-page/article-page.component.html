@@ -6,9 +6,10 @@
     <span>· {{article.visit_count}}次浏览&nbsp;</span>
     <span>· 来自{{article.tab}}&nbsp;</span>
   </div>
+  <div class="content" [innerHtml]="article.content"></div>
   <!-- <div class="content" v-html="article.content"></div> -->
   <div>
     <div>{{article.reply_count}}评论</div>
-    <!-- <CommentCard v-for="item in article.replies" :key="item.id" :myData="item" /> -->
+    <commentcard-component *ngFor="let item of article.replies" [myData]="item"></commentcard-component>
   </div>
 </div>

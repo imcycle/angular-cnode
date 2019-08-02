@@ -1,0 +1,8 @@
+<div class="commentcard py-20">
+  <div class="flex pb-10">
+    <img class="pr-10" width="30" height="30" [src]="myData.author.avatar_url" />
+    <span class="pr-10">{{myData.author.loginname}}</span>
+    <span>{{myData.create_at}}</span>
+  </div>
+  <div class="content" [innerHtml]="myData.content"></div>
+</div>
